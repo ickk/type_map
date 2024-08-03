@@ -1,0 +1,22 @@
+[package]
+name = "type_map"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+hashbrown = { version = "0.14", default-features = false }
+
+[lints]
+rust.unsafe_op_in_unsafe_fn = "deny"
+clippy.new_without_default = "allow"
+clippy.toplevel_ref_arg = "allow"
+clippy.too_many_arguments = "allow"
+clippy.match_ref_pats = "allow"
+clippy.needless_return = "allow"
+clippy.inconsistent_digit_grouping = "allow"
+clippy.enum_variant_names = "allow"
+clippy.module_inception = "allow"
+
+[profile.dev.package."*"]
+opt-level = 3
