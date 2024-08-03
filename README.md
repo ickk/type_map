@@ -26,3 +26,18 @@ map.insert(3u32);
 assert_eq!(map.get::<u32>(), Some(&3003));
 assert_eq!(map.get::<u16>(), Some(&202));
 ```
+
+
+License
+-------
+
+This crate is licensed under any of the
+[Apache license, Version 2.0](./LICENSE-APACHE),
+or the
+[MIT license](./LICENSE-MIT),
+or the
+[Zlib license](./LICENSE-ZLIB)
+at your option.
+
+Unless explicitly stated otherwise, any contributions you intentionally submit
+for inclusion in this work shall be licensed accordingly.
